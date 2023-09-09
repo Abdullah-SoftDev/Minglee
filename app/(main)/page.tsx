@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 
 const HomePage = async () => {
-  const userInfo = false;
+  const userInfo = true;
   if (!userInfo) redirect("/onBoarding");
 
   return (
