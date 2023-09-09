@@ -15,7 +15,6 @@ import {
     AvatarImage,
 } from "@/components/ui/avatar"
 import { Input } from "@/components/ui/input"
-import { GifIcon, VideoCameraIcon } from "@heroicons/react/24/outline"
 import PhotoIconButton from "@/components/CreatePost/PhotoIconButton"
 import VedioIconButton from "@/components/CreatePost/VideoIconButton"
 
@@ -47,7 +46,6 @@ const page = () => {
                     <div className="space-x-4 flex">
                         <PhotoIconButton />
                         <VedioIconButton />
-                        <GifIcon className="w-7 h-7 cursor-pointer" />
                     </div>
                     <Button className="font-semibold text-lg">Post</Button>
                 </CardFooter>

@@ -13,7 +13,7 @@ function LeftSidebar() {
 
   return (
     <section className="sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto pb-5 pt-20 max-md:hidden dark:bg-[#121417] border-r-2 dark:border-none">
-      <div className="flex w-full flex-1 flex-col px-6">
+      <div className="flex w-full flex-1 flex-col px-8">
         {sidebarLinks.map((link) => {
           const isActive = (pathname.includes(link.route) && link.route.length > 1) || pathname === link.route;
 
