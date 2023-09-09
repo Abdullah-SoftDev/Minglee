@@ -59,7 +59,7 @@ export function OnBoardingForm({userData}:{userData:UserInfo}) {
                   type='file'
                   accept='img/*'
                   placeholder='Add profile photo'
-                  className='border-none bg-transparent outline-none file:text-blue-500 file:cursor-pointer max-w-xs'
+                  className='outline-none max-w-xs'
                 />
               </FormControl>
             </FormItem>
@@ -126,7 +126,7 @@ export function OnBoardingForm({userData}:{userData:UserInfo}) {
           )}
         />
 
-        <Button type='submit' variant={"trust"}>
+        <Button type='submit'>
           Submit
         </Button>
       </form>

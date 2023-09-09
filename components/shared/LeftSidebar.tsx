@@ -12,8 +12,8 @@ function LeftSidebar() {
   const { userId } = useAuth();
 
   return (
-    <section className="custom-scrollbar sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto border-r pb-5 pt-16 max-md:hidden bg-gray-900">
-      <div className="flex w-full flex-1 flex-col gap-4 px-6">
+    <section className="sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto pb-5 pt-20 max-md:hidden dark:bg-[#121417] border-r-2 dark:border-none">
+      <div className="flex w-full flex-1 flex-col px-6">
         {sidebarLinks.map((link) => {
           const isActive = (pathname.includes(link.route) && link.route.length > 1) || pathname === link.route;
 
@@ -27,10 +27,10 @@ function LeftSidebar() {
             >
               
               <link.icon
-                className="text-white w-6 h-6"
+                className="w-6 h-6"
               />
 
-              <p className="max-lg:hidden text-white">{link.label}</p>
+              <p className="max-lg:hidden">{link.label}</p>
             </Link>
           )}
         )}
@@ -41,8 +41,8 @@ function LeftSidebar() {
       <SignedIn>
         <SignOutButton signOutCallback={() => router.push('/sign-in')}>
           <div className="flex cursor-pointer gap-4 p-4">
-            <ArrowLeftOnRectangleIcon className="text-white w-6 h-6" />
-            <p className="max-lg:hidden text-white">Logout</p>
+            <ArrowLeftOnRectangleIcon className="w-6 h-6" />
+            <p className="max-lg:hidden">Logout</p>
           </div>
         </SignOutButton>
       </SignedIn>

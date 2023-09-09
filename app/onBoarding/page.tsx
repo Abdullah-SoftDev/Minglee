@@ -17,8 +17,8 @@ const OnBoardingPage = async () => {
   return (
     <>
       <main className='mx-auto flex max-w-3xl flex-col justify-start'>
-      <h1 className='font-semibold text-xl text-white'>Onboarding</h1>
-      <p className='mt-3 text-base text-white'>
+      <h1 className='font-semibold text-xl'>Onboarding</h1>
+      <p className='mt-3 text-base'>
         Complete your profile now, to use Minglee.
       </p>
 
