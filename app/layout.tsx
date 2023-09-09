@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 import Topbar from '@/components/shared/Topbar'
 import Bottombar from '@/components/shared/Bottombar'
@@ -9,7 +9,7 @@ import RightSidebar from '@/components/shared/RightSidebar'
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from '@/lib/utils'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Minglee',
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(inter.className, "bg-white dark:bg-[#000000]")}>
+      <body className={cn(font.className, "bg-white dark:bg-[#000000]")}>
       <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey='minglee-theme'>
          <Topbar />
 
