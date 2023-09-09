@@ -1,3 +1,5 @@
+import PostCard from "@/components/PostCard";
+import { fakeCardData } from "@/constants";
 import { redirect } from "next/navigation";
 
 const HomePage = async () => {
@@ -6,7 +8,11 @@ const HomePage = async () => {
 
   return (
     <>
-      <h1 className="font-medium text-2xl">Home</h1>
+      <h1 className="font-medium text-2xl mb-6">Home</h1>
+      <div className="space-y-5">
+      {fakeCardData.map((data) => <PostCard key={data.id} data={data}/>
+      )}
+      </div>
     </>
   )
 }

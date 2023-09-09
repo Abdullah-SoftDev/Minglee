@@ -5,7 +5,7 @@ import { ToogleTheme } from "./ToogleTheme";
 
 const Topbar = () => {
   return (
-    <nav className="fixed top-0 z-30 flex w-full items-center justify-between px-6 py-4 dark:bg-[#121417]">
+    <nav className="fixed top-0 z-30 bg-white flex w-full items-center justify-between p-4 dark:bg-[#121417]">
       <Link href="/" className="flex items-center gap-4">
         <img src="https://www.svgrepo.com/show/475689/twitter-color.svg" alt="logo" width={28} height={28} />
         <p className="max-xs:hidden">Minglee</p>
