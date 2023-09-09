@@ -1,6 +1,10 @@
+import { OnBoardingForm } from "@/components/forms/OnBoardingForm"
+
 const OnBoardingPage = () => {
   return (
-    <div>OnBoardingPage</div>
+    <>
+      <OnBoardingForm/>
+    </>
   )
 }
 
