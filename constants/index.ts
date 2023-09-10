@@ -110,3 +110,56 @@ export const fakeCardData = [
     likeCount: 6789,
   },
 ];
+
+export const fakeComments = [
+  {
+    username: 'jsmastery',
+    timestamp: '1 month ago',
+    comment: 'Js Mastery is the best channel on youtube I have ever seen in my entire life.',
+    avatarSrc: 'https://yt3.ggpht.com/ytc/AOPolaT7_E1QM4mvTNSWtPBHMMDw_-zILhgK-fjaPfdBZA=s48-c-k-c0x00ffffff-no-rj',
+    avatarFallback: 'CN',
+  },
+  {
+    username: 'coding_pro',
+    timestamp: '2 weeks ago',
+    comment: "I've learned so much from this channel. Keep up the great work!",
+    avatarSrc: 'https://yt3.ggpht.com/ytc/AOPolaRS8LquQn2G8Ykp5cAIkQ4d5Y215RBuTAOo0iEc2w=s48-c-k-c0x00ffffff-no-rj',
+    avatarFallback: 'CP',
+  },
+  {
+    username: 'web_dev_guru',
+    timestamp: '3 months ago',
+    comment: 'Amazing content! Thanks for sharing your knowledge.',
+    avatarSrc: 'https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj',
+    avatarFallback: 'WDG',
+  },
+  {
+    username: 'jsmastery',
+    timestamp: '1 month ago',
+    comment: 'Js Mastery is the best channel on youtube I have ever seen in my entire life.',
+    avatarSrc: 'https://yt3.ggpht.com/ytc/AOPolaT7_E1QM4mvTNSWtPBHMMDw_-zILhgK-fjaPfdBZA=s48-c-k-c0x00ffffff-no-rj',
+    avatarFallback: 'CN',
+  },
+  {
+    username: 'coding_pro',
+    timestamp: '2 weeks ago',
+    comment: "I've learned so much from this channel. Keep up the great work!",
+    avatarSrc: 'https://yt3.ggpht.com/ytc/AOPolaRS8LquQn2G8Ykp5cAIkQ4d5Y215RBuTAOo0iEc2w=s48-c-k-c0x00ffffff-no-rj',
+    avatarFallback: 'CP',
+  },
+  {
+    username: 'web_dev_guru',
+    timestamp: '3 months ago',
+    comment: 'Amazing content! Thanks for sharing your knowledge.',
+    avatarSrc: 'https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj',
+    avatarFallback: 'WDG',
+  },
+  {
+    username: 'code_ninja',
+    timestamp: '4 days ago',
+    comment: 'This channel is a game-changer for developers. Highly recommended!',
+    avatarSrc: 'https://yt3.ggpht.com/ytc/AOPolaRwhbjUkxcaOF32GfOsBeMOmdiS__WQ6-S71jo=s48-c-k-c0x00ffffff-no-rj',
+    avatarFallback: 'CN',
+  },
+  // Add more fake data objects here if needed
+];

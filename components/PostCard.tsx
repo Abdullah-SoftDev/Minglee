@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/avatar"
 import { Bookmark, HeartIcon, Share } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { CommentScreen } from "./CommentScreen"
 
 const PostCard = ({ data }: any) => {
     return (
@@ -41,6 +42,7 @@ const PostCard = ({ data }: any) => {
             </CardContent>
 
             <CardFooter className="flex justify-between">
+                <CommentScreen />
                 <div className="flex items-center">
                     <HeartIcon className="w-5 h-5 cursor-pointer" />
                     <span className="ml-2">{data?.likeCount}</span>
