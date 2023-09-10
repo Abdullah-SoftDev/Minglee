@@ -163,3 +163,85 @@ export const fakeComments = [
   },
   // Add more fake data objects here if needed
 ];
+
+export const searchProfile = [
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 1,
+    name: "Abdullah Sidd",
+    username: "abdul",
+    avatarSrc: "https://yt3.ggpht.com/ytc/AOPolaShJd2MDY-VFd1RSORNHJWpQ4Kv2Xzyk4CvcuBq4Q=s48-c-k-c0x00ffffff-no-rj",
+  },
+  // Add more fake users here if needed
+];
