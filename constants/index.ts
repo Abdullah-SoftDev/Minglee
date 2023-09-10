@@ -18,8 +18,8 @@ export const sidebarLinks = [
     },
     {
       icon: BookmarkIcon,
-      route: "/saved",
-      label: "Saved",
+      route: "/bookmarks",
+      label: "BookMarks",
     },
     {
       icon: ChatBubbleBottomCenterIcon,
