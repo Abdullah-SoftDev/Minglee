@@ -12,42 +12,36 @@ function LeftSidebar() {
   const { userId } = useAuth();
 
   return (
-    <section className="sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto pb-5 pt-20 max-md:hidden dark:bg-[#121417] border-r-2 dark:border-none">
-      <div className="flex w-full flex-1 flex-col px-8">
+
+    <section className="flex flex-col col-span-2 border-r-2 dark:border-slate-500 pt-20 max-md:hidden dark:bg-[#121417]">
+      <div className="mx-auto">
         {sidebarLinks.map((link) => {
           const isActive = (pathname.includes(link.route) && link.route.length > 1) || pathname === link.route;
 
-          if(link.route === '/profile') link.route = `${link.route}/${userId}`
+          if (link.route === '/profile') link.route = `${link.route}/${userId}`;
 
           return (
-            <Link 
+            <Link
               href={link.route}
               key={link.label}
-              className={`relative flex justify-start gap-4 rounded-lg p-4 ${isActive && 'bg-purple-500'}`}
+              className={`flex group items-center max-w-fit space-x-2 rounded-full px-4 py-3 transition-all duration-200 hover:bg-gray-100  mb-4 ${isActive && 'text-purple-500'}`}
             >
-              
-              <link.icon
-                className="w-6 h-6"
-              />
-
-              <p className="max-lg:hidden">{link.label}</p>
+              <link.icon className="w-6 h-6" />
+              <p className="max-lg:hidden group-hover:text-blue-400">{link.label}</p>
             </Link>
-          )}
-        )}
+          );
+        })}
+        <div className="rounded-full bg-rose-600 hover:bg-rose-500">
+          <SignedIn>
+            <SignOutButton signOutCallback={() => router.push('/sign-in')}>
+              <div className="flex cursor-pointer space-x-2 px-4 py-3">
+                <ArrowLeftOnRectangleIcon className="w-6 h-6" />
+                <p className="max-lg:hidden">Logout</p>
+              </div>
+            </SignOutButton>
+          </SignedIn>
+        </div>
       </div>
-
-      <div className="mt-10 px-6">
-        <div className="rounded-md bg-rose-600 hover:bg-rose-500">
-      <SignedIn>
-        <SignOutButton signOutCallback={() => router.push('/sign-in')}>
-          <div className="flex cursor-pointer gap-4 p-4">
-            <ArrowLeftOnRectangleIcon className="w-6 h-6" />
-            <p className="max-lg:hidden">Logout</p>
-          </div>
-        </SignOutButton>
-      </SignedIn>
-    </div>
-    </div>
     </section>
   )
 }

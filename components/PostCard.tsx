@@ -10,12 +10,12 @@ import {
     AvatarFallback,
     AvatarImage,
 } from "@/components/ui/avatar"
-import { Bookmark, HeartIcon, MessageCircle, Share } from "lucide-react"
+import { Bookmark, HeartIcon, Share } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const PostCard = ({ data }: any) => {
     return (
-        <Card className="w-full max-w-3xl mx-auto">
+        <Card>
             <div className="flex">
                 <div className="flex items-center mr-3 cursor-pointer">
                     <Avatar className="m-6">
@@ -36,15 +36,11 @@ const PostCard = ({ data }: any) => {
                 {data?.imageUrl && <img
                     src={data?.imageUrl}
                     alt="Your Image"
-                    className={cn(data?.description && "mt-3", "w-full h-full object-cover rounded-2xl")}
+                    className={cn(data?.description && "mt-3", "w-full h-full shadow-sm object-cover rounded-2xl")}
                 />}
             </CardContent>
 
             <CardFooter className="flex justify-between">
-                <div className="flex items-center">
-                    <MessageCircle className="w-5 h-5 cursor-pointer" />
-                    <span className="ml-2">{data?.messageCount}</span>
-                </div>
                 <div className="flex items-center">
                     <HeartIcon className="w-5 h-5 cursor-pointer" />
                     <span className="ml-2">{data?.likeCount}</span>
