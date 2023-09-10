@@ -30,7 +30,7 @@ export default function RootLayout({
             <div className='mx-auto max-h-screen overflow-hidden'>
               <main className="grid grid-cols-9">
                 <LeftSidebar />
-                <section className="xl:col-span-5 pt-20 col-span-7 max-md:col-span-9 p-4 max-h-screen overflow-y-scroll">
+                <section className="xl:col-span-5 pt-20 col-span-7 max-md:col-span-9 p-4 max-h-screen overflow-y-scroll pb-20">
                   {children}
                 </section>
                 <RightSidebar />

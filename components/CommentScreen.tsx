@@ -44,7 +44,7 @@ export function CommentScreen() {
       </Drawer.Trigger>
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0" />
-        <Drawer.Content className="dark:bg-[#121417] bg-white flex flex-col fixed bottom-0 left-0 right-0 max-h-[90%] h-[90%] rounded-t-[10px] z-30">
+        <Drawer.Content className="dark:bg-[#121417] bg-white flex flex-col fixed bottom-0 left-0 right-0 max-h-[80%] h-[80%] md:max-h-[80%] rounded-t-[10px] z-30">
           <section className="max-w-3xl w-full mx-auto flex flex-col overflow-auto px-4 py-8">
             {/* Comment box */}
             <div className="flex space-x-3">

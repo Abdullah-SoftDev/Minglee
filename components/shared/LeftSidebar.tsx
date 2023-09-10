@@ -13,7 +13,7 @@ function LeftSidebar() {
 
   return (
 
-    <section className="flex flex-col col-span-2 border-r-2 dark:border-slate-500 pt-20 max-md:hidden dark:bg-[#121417]">
+    <section className="flex flex-col col-span-2 border-r-2 dark:border-none dark:border-slate-500 pt-20 max-md:hidden dark:bg-[#121417] h-[100vh]">
       <div className="mx-auto">
         {sidebarLinks.map((link) => {
           const isActive = (pathname.includes(link.route) && link.route.length > 1) || pathname === link.route;
@@ -24,7 +24,7 @@ function LeftSidebar() {
             <Link
               href={link.route}
               key={link.label}
-              className={`flex group items-center max-w-fit space-x-2 rounded-full px-4 py-3 transition-all duration-200 hover:bg-gray-100  mb-4 ${isActive && 'text-purple-500'}`}
+              className={`flex group items-center max-w-fit space-x-2 rounded-full px-4 py-3 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-600  mb-4 ${isActive && 'text-purple-500'}`}
             >
               <link.icon className="w-6 h-6" />
               <p className="max-lg:hidden group-hover:text-blue-400">{link.label}</p>

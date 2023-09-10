@@ -2,7 +2,7 @@ import { suggestedUsers } from '@/constants';
 
 const RightSidebar = () => {
   return (
-    <section className="flex-col col-span-2 border-l-2 dark:border-slate-500 pt-20 dark:bg-[#121417] p-5 hidden xl:inline">
+    <section className="flex-col col-span-2 border-l-2 dark:border-none dark:border-slate-500 pt-20 dark:bg-[#121417] p-5 hidden xl:inline  h-[100vh]">
       <div className="flex flex-col gap-4">
         <h3 className="text-lg">Suggested Users</h3>
         {suggestedUsers.map((user, index) => (
