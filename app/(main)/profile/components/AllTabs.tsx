@@ -10,13 +10,14 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-import { fakeCardData } from "@/constants"
+import { fakeCardData, searchProfile } from "@/constants"
 
 export function AllTabs() {
   return (
@@ -33,50 +34,46 @@ export function AllTabs() {
       </div>
       </TabsContent>
       <TabsContent value="follow">
-        <Card>
-          <CardHeader>
-            <CardTitle>Password</CardTitle>
-            <CardDescription>
-              Change your password here. After saving, you'll be logged out.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <div className="space-y-1">
-              <Label htmlFor="current">Current password</Label>
-              <Input id="current" type="password" />
+      <div className="space-y-5">
+        {searchProfile.map((user) => (
+          <div key={user.id} className="flex justify-between items-center">
+            <div className="flex space-x-3">
+              <Avatar className="w-12 h-12">
+                <AvatarImage src={user.avatarSrc} alt={user.name} />
+                <AvatarFallback>{user.username}</AvatarFallback>
+              </Avatar>
+              <div>
+                <p>{user.name}</p>
+                <p>@{user.username}</p>
+              </div>
             </div>
-            <div className="space-y-1">
-              <Label htmlFor="new">New password</Label>
-              <Input id="new" type="password" />
-            </div>
-          </CardContent>
-          <CardFooter>
-            <Button>Save password</Button>
-          </CardFooter>
-        </Card>
+            <Button>
+              Unfollow
+            </Button>
+          </div>
+        ))}
+      </div>
       </TabsContent>
       <TabsContent value="following">
-        <Card>
-          <CardHeader>
-            <CardTitle>Password</CardTitle>
-            <CardDescription>
-              Change your password here. After saving, you'll be logged out.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <div className="space-y-1">
-              <Label htmlFor="current">Current password</Label>
-              <Input id="current" type="password" />
+      <div className="space-y-5">
+        {searchProfile.map((user) => (
+          <div key={user.id} className="flex justify-between items-center">
+            <div className="flex space-x-3">
+              <Avatar className="w-12 h-12">
+                <AvatarImage src={user.avatarSrc} alt={user.name} />
+                <AvatarFallback>{user.username}</AvatarFallback>
+              </Avatar>
+              <div>
+                <p>{user.name}</p>
+                <p>@{user.username}</p>
+              </div>
             </div>
-            <div className="space-y-1">
-              <Label htmlFor="new">New password</Label>
-              <Input id="new" type="password" />
-            </div>
-          </CardContent>
-          <CardFooter>
-            <Button>Save password</Button>
-          </CardFooter>
-        </Card>
+            <Button>
+              View Profile
+            </Button>
+          </div>
+        ))}
+      </div>
       </TabsContent>
     </Tabs>
   )
