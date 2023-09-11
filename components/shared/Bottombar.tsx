@@ -1,17 +1,20 @@
 "use client"
 
 import { sidebarLinks } from "@/constants";
+import { useAuth } from "@clerk/nextjs";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 function Bottombar() {
   const pathname = usePathname();
+  const { userId } = useAuth();
   
   return (
     <section className="fixed bottom-0 z-10 w-full rounded-t-3xl dark:bg-[#121417] p-4 backdrop-blur-lg xs:px-7 md:hidden">
       <div className="flex items-center justify-between gap-3 xs:gap-5">
       {sidebarLinks.map((link) => {
           const isActive = (pathname.includes(link.route) && link.route.length > 1) || pathname === link.route;
+          if (link.route === '/profile') link.route = `/${link.route}/${userId}`;
 
           return (
             <Link 
