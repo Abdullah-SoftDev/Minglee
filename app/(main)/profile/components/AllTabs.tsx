@@ -28,13 +28,13 @@ export function AllTabs() {
         <TabsTrigger value="following">Following</TabsTrigger>
       </TabsList>
       <TabsContent value="posts">
-      <div className="space-y-5">
+      <div className="space-y-5 pt-5">
       {fakeCardData.map((data) => <PostCard key={data.id} data={data}/>
       )}
       </div>
       </TabsContent>
       <TabsContent value="follow">
-      <div className="space-y-5">
+      <div className="space-y-5 pt-5">
         {searchProfile.map((user) => (
           <div key={user.id} className="flex justify-between items-center">
             <div className="flex space-x-3">
@@ -55,7 +55,7 @@ export function AllTabs() {
       </div>
       </TabsContent>
       <TabsContent value="following">
-      <div className="space-y-5">
+      <div className="space-y-5 pt-5">
         {searchProfile.map((user) => (
           <div key={user.id} className="flex justify-between items-center">
             <div className="flex space-x-3">

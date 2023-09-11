@@ -14,7 +14,7 @@ function Bottombar() {
       <div className="flex items-center justify-between gap-3 xs:gap-5">
       {sidebarLinks.map((link) => {
           const isActive = (pathname.includes(link.route) && link.route.length > 1) || pathname === link.route;
-          if (link.route === '/profile') link.route = `/${link.route}/${userId}`;
+          if (link.route === '/profile') link.route = `${link.route}/${userId}`;
 
           return (
             <Link 

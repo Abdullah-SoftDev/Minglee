@@ -8,7 +8,7 @@ const ProfilePage = () => {
   return (
     <div>
       {/* Banner Image */}
-      <div className="h-52 bg-cover bg-center" style={{ backgroundImage: 'url("https://pbs.twimg.com/profile_banners/1614944002356449282/1675077011/600x200")' }}>
+      <div className="h-52 bg-cover bg-center border-b-2" style={{ backgroundImage: 'url("https://pbs.twimg.com/profile_banners/1614944002356449282/1675077011/600x200")' }}>
       </div>
 
       {/* Rest of the profile content */}
@@ -30,7 +30,7 @@ const ProfilePage = () => {
       <div className="pt-5 space-y-3">
         <div className="space-y-1">
           <p className="text-xl font-semibold">Sidd_abdullah</p>
-          <p className="text-slate-300">@Siddabdullah</p>
+          <p className="dark:text-slate-300 text-slate-500">@Siddabdullah</p>
           <div className="max-w-[300px] lg:max-w-[500px]">
             <Link target="_blank" href={"/"} className="text-blue-400 underline underline-offset-1 overflow-hidden whitespace-nowrap block truncate">
               http://localhost:3000/profile/user_2V5FTbrZDGczfHx2aPmC3QmtLxw
@@ -56,8 +56,8 @@ const ProfilePage = () => {
         </div>
 
         <div className="space-x-3 flex">
-          <p className="cursor-pointer hover:underline">3 Following</p>
-          <p className="cursor-pointer hover:underline">15 Folowers</p>
+          <p>3 Following</p>
+          <p>15 Folowers</p>
         </div>
       </div>
 
