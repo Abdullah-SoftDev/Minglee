@@ -2,6 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { BriefcaseIcon, CalendarCheck, MapPin } from "lucide-react";
 import Link from "next/link";
+import { AllTabs } from "../components/AllTabs";
 
 const ProfilePage = () => {
   return (
@@ -59,6 +60,8 @@ const ProfilePage = () => {
           <p className="cursor-pointer hover:underline">15 Folowers</p>
         </div>
       </div>
+
+      <AllTabs />
     </div>
   );
 };
