@@ -2,30 +2,32 @@ import { Button } from "@/components/ui/button"
 import {
     Dialog,
     DialogContent,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
-import UploadImageInput from "./UploadImageInput"
+import { EditProfileForm } from "./EditProfileForm";
+import { currentUser } from "@clerk/nextjs";
+import { UserInfo } from "@/types";
 
-export function EditProfile() {
-
+export async function EditProfile() {
+    const user = await currentUser();
+    if (!user) return null; // to avoid typescript warnings
+  
+    const userData:UserInfo = {
+      userId: user.id,
+      username: user.username ?? "",
+      name: user.firstName ?? "",
+      bio: "",
+      image: user.imageUrl,
+    };
     return (
         <Dialog>
             <DialogTrigger asChild>
-            <Button>
-            Edit Profile
-          </Button>
-        </DialogTrigger>
-            <DialogContent className="max-w-[360px] sm:max-w-xl md:max-w-2xl">
-                <DialogHeader>
-                    <DialogTitle>Upload Banner</DialogTitle>
-                </DialogHeader>
-                <UploadImageInput />
-                <DialogFooter>
-                    <Button type="submit">Save changes</Button>
-                </DialogFooter>
+                <Button>
+                    Edit Profile
+                </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-[360px] md:max-w-3xl">
+                    <EditProfileForm userData={userData}/>
             </DialogContent>
         </Dialog>
     )
