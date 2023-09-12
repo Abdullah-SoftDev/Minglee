@@ -4,13 +4,14 @@ import { BriefcaseIcon, CalendarCheck, MapPin } from "lucide-react";
 import Link from "next/link";
 import { AllTabs } from "../components/AllTabs";
 import { BannerUpload } from "../components/BannerUpload";
+import { EditProfile } from "../components/EditProfile";
 
 const ProfilePage = () => {
   return (
     <>
       <div className="relative h-52 bg-cover bg-center border-b-2" style={{ backgroundImage: 'url("https://pbs.twimg.com/profile_banners/1614944002356449282/1675077011/600x200")' }}>
         <div className="w-10 h-10 absolute bottom-4 right-4 backdrop-filter backdrop-blur-lg bg-opacity-50 cursor-pointer rounded-full flex items-center justify-center">
-         <BannerUpload />
+          <BannerUpload />
         </div>
       </div>
 
@@ -24,9 +25,7 @@ const ProfilePage = () => {
           <Button>
             Follow
           </Button>
-          <Button>
-            Edit Profile
-          </Button>
+          <EditProfile />
         </div>
       </div>
 
