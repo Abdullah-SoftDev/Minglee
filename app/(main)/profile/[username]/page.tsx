@@ -1,18 +1,18 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { BriefcaseIcon, CalendarCheck, MapPin, PencilIcon } from "lucide-react";
+import { BriefcaseIcon, CalendarCheck, MapPin } from "lucide-react";
 import Link from "next/link";
 import { AllTabs } from "../components/AllTabs";
+import { BannerUpload } from "../components/BannerUpload";
 
 const ProfilePage = () => {
   return (
     <>
       <div className="relative h-52 bg-cover bg-center border-b-2" style={{ backgroundImage: 'url("https://pbs.twimg.com/profile_banners/1614944002356449282/1675077011/600x200")' }}>
         <div className="w-10 h-10 absolute bottom-4 right-4 backdrop-filter backdrop-blur-lg bg-opacity-50 cursor-pointer rounded-full flex items-center justify-center">
-          <PencilIcon className="w-5 h-5 dark:text-black" />
+         <BannerUpload />
         </div>
       </div>
-
 
       {/* Rest of the profile content */}
       <div className="flex justify-between items-center pt-5">
